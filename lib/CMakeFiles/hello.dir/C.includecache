@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/walther/ProjetModule/hello.c
+stdio.h
+-
+stdlib.h
+-
+
+/home/walther/ProjetModule/hello.h
+
+/home/walther/ProjetModule/main.c
+stdio.h
+-
+stdlib.h
+-
+hello.h
+/home/walther/ProjetModule/hello.h
+

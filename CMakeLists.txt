@@ -4,3 +4,8 @@ PROJECT(hello)
 
 ADD_EXECUTABLE(hello hello.c main.c)
 
+ADD_LIBRARY(lib_hello STATIC hello.c)
+
+TARGET_LINK_LIBRARIES(hello lib_hello)
+
+INCLUDE_DIRECTORIES(../ProjetModule)
